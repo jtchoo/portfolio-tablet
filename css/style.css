@@ -80,10 +80,19 @@ h2{
 	left: 188px;
 	top: 195px;
 	border-radius: 20px; 
+	/* display:inline-flex;
+	justify-content: space-around; */
+	/* margin-left: 400px; */
+	/* align-items: flex-start; */
 	/* display:flex;
 	flex-direction: column;
 	align-items:center; */
 	/* margin-left:90px; */
+}
+
+.social {
+	display:flex;
+	justify-content: space-around;
 }
 
 /* .social {
@@ -221,6 +230,21 @@ input[type=submit]:hover {
 	/* justify-content: center; */
 }
 
+.skip a{
+	background: white;
+	left: 0;
+	padding: 6px;
+	-webkit-transition: top 1s ease-out;
+	transition: top 1s ease-out;
+	z-index: 1;
+	position:absolute;
+	top: -40px;
+	}
+	
+.skip a:focus{
+	position:static;
+}
+
 
 @media screen and (min-width: 850px) {
 
@@ -290,12 +314,19 @@ input[type=submit]:hover {
 	} */
 
     .resumeimage {
-        flex-basis: 25%
+        flex-basis: 25%;
     }
 
     .resumeText {
         font-size: 18px;
-        /* padding-left: 0px; */
     }
+
+
+	#balloon1 {
+		width:20%;
+		padding:15px;
+		/* display:flex; */
+		margin:auto;
+	}
 
 }
